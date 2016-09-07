@@ -24,7 +24,7 @@ class MemberQuery {
                 """)
 
         if ( !StringUtils.isEmpty(memberName) ) {
-            query.append("WHERE name ").append(QueryUtils.like(memberName))
+            query.append("WHERE ").append(QueryUtils.like("name", memberName))
         }
 
         return query;

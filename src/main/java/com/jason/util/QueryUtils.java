@@ -5,7 +5,7 @@ package com.jason.util;
  * @since 2016. 9. 7.
  */
 public class QueryUtils {
-    public static String like(String property) {
-        return "LIKE CONCAT('%', '" + property + "', '%')";
+    public static String like(String column, String value) {
+        return column + " LIKE CONCAT('%', '" + value + "', '%')";
     }
 }
